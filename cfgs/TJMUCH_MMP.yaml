@@ -1,0 +1,66 @@
+CKPTS:
+  datasource:     TJMUCH_MMP
+  task:           MMPriskRegression
+  exp_code:       debug
+  
+  wsi_root_dir:   /home/cyyan/Projects/TJMUCHMMP-cohort/                                                        # wsi root path
+  data_root_dir:  results/TJMUCH_MMP_2Feats_20x_uni                                                             # features representation data directory for tiles
+  csv_info_path:  results/MPcohort_info.csv                                                                     # csv file with slide_id and label information
+  split_dir:      results/TJMUCH_MMP_3CaseSplits_20x/MMPrisk_KFoldsCV                                           # casesplitting root path
+  use_h5: False                                                                                                 # use h5 file or not for coords
+
+  results_dir:    results/developed_models                                                                      # results directory for model, logs, and test evaluation results
+  cfg_to_name:    params_setting.txt                                                                            # hyper-params setting file for saving
+
+  indep_data_root_dir:                                                                                          # features representation data directory for indepedent test data
+  indep_csv_info_path:                                                                                          # indepedent test csv file wih slide info and mp label for evaluation
+
+  zeroshot_idx_dir: # results/TJMUCH_MMP_2Feats_20x_plip/pt_files_zs_tissueidx                                  # noisy filtering exp. use zeroshot index for training
+
+
+TRAIN:
+  model_type:  CPMP                 # (default: CPMP), and comparative models, ['TransMIL', 'CLAM', 'ABMIL', 'Transformer']
+  encoding_dim:  1024               # patch encoding dim, [1024, 768, 2048]
+  model_size: uni1024               # size of model, ['resnet_small', 'ViT_small', 'ccl2048', 'gigapath1536']
+  agent_token_num: 1                # the number of agent tokens in CPMP, (default: 1), 'None' indicates 'Transformer' model
+
+  num_perslide: 5000                # None will cover all samples, for data sampling, __getitem__
+  label_col: MMP_index              # label column name
+  labels_list: ["Low", "High"]
+
+  n_classes: 1                      # number of classes (default: 1) for regression or classification
+  loss_func: MSE                    # slide-level classification loss function, (default: 'MSE') or 'CE' for classification
+  loss_func_aux: MSE                # slide-level auxiliary loss function
+
+  log_data: True                    # log data using tensorboard
+  weighted_sample: False            # enable weighted sampling
+  
+
+HyperParams:
+  max_epochs: 1000                  # maximum number of epochs to train (default: 1000)
+  batch_size: 1                     # batch size commonly set to 1 for MIL, we utilized Gradient Accumulation below.
+  gc: 32                            # Gradient Accumulation Step. HERE, Gradient Accumulation is equal to common batch size.
+  lr: 0.0001                        # learning rate (default: 0.0001)
+  optim: adam                       # optimizer, adam sgd adamW radam Lamb
+  scheduler: LinearLR               # optimizer scheduler [CosineAnnealingLR CyclicLR LinearLR OneCycleLR StepLR]
+  drop_out: 0.5                     # a float num, enable dropout (p=0.5)
+  early_stopping: True              # enable early stopping or not
+  early_stopping_metric: score      # early stopping metric 'score' or 'loss'
+
+  reg: 0.0001                       # weight decay (default: 1e-4)
+  lambda_reg: 0.00001               # L1-Regularization Strength (Default 1e-5)
+
+
+CROSSVALIDATAION:
+  times: 5                          # number of times (default: 5)
+  t_start: -1                       # start time (default: -1, last time)
+  t_end: -1                         # end time (default: -1, first time)
+  k: 5                              # number of folds (default: 5)
+  k_start: -1                       # start fold (default: -1, last fold)
+  k_end: -1                         # end fold (default: -1, first fold)
+
+
+COMMON:
+  gpu: '0'
+  seed: 2020                        # random seed for reproducible experiment (default: 2020)
+  workers: 8                        # data loader workers
