@@ -1,6 +1,6 @@
 # CPMP: AI-driven computational pathology for recurrence risk assessment in early-stage breast cancer 
 
-> **In a Word**: We presented an AI-driven computational pathology framework (CPMP) for MP-informed recurrence risk assessment in patients with early-stage BC using histopathological WSIs.   
+<!-- > We presented an AI-driven computational pathology framework (CPMP) for MP-informed recurrence risk assessment in patients with early-stage BC using histopathological WSIs.   
 
 ## Highlights
 
@@ -33,7 +33,7 @@ We hypothesized that morphological patterns in routine histological slides assoc
 5. **Clinical Application**. CPMP model has the potential to serve as a flexible supplement integrating into routine clinical diagnostic workflow for early-stage BC patients.
 <div align="center">
 	<img src="materials/github_4workflow.png" alt="Editor" width="85%">
-</div>
+</div> -->
 
 
 
@@ -46,14 +46,13 @@ We hypothesized that morphological patterns in routine histological slides assoc
 The codes have been implemented on Ubuntu 22.04 LTS. The installation in other operation systems (Windows or MAC) should be cautious due to python packages.
 
 #### Packages and Installation
-CPMP is implemented by Python 3.8 and PyTorch 2.0. The packages required have been provided in the file [requirements.txt](requirements.txt)
+CPMP is implemented by Python 3.8 and PyTorch 2.2. The packages required have been provided in the file [environments.yml](environments.yml)
 
-To install the environment, you can run the command in the terminal:
+✨ To install the Conda environment, you can run the command in the terminal:
 
 ```shell
-conda create --name <env_name> python=3.8
-conda activate <env_name>
-pip install -r requirements.txt
+conda env create -f environments.yml
+conda activate cpmp
 ```
 
 **NOTE**: The codes require package `openslide python`, but its installation is different between Linux and Windows. Please follow the [offical documentation](https://openslide.org/api/python/) to install and import it in python to make sure it can work correctly. 
@@ -64,7 +63,7 @@ If `ctranspath` feature extractor is further used (which was utilized for ablati
 
 The in-house cohort is accessible upon request. The data can only be used under the condition that the request is for non-profit, purely academic research purposes, and the requesting researchers must provide valid ethics approval from their institution. 
 
-The TCGA-BRCA data (slides and clinicopathological information) are available at [portal.gdc.cancer.gov](https://portal.gdc.cancer.gov/). The follow-up data are available at [TCGA Clinical Data Resource](https://pubmed.ncbi.nlm.nih.gov/29625055/). 
+The TCGA-BRCA data (slides and clinicopathological information) are available at [portal.gdc.cancer.gov](https://portal.gdc.cancer.gov/). The follow-up data are available at [TCGA Clinical Data Resource](https://doi.org/10.1016/j.cell.2018.02.052). 
 
 You should put whole slide images into this path --> configured parameter: `datapath`
 
@@ -282,7 +281,7 @@ COMMON:
 
 ### 4. Trained models weights
 
-The pre-trained weights of the CPMP model on our in-house cohort can be downloaded in [**HERE**](CPMP_model_weights/CPMP_t0f0_checkpoint_v1.pt). The weights can be used to reproduce the results in our paper. Also, It can be directly applied to new H&E WSIs for inference.
+The pre-trained weights of the CPMP model on our in-house cohort can be available soon.
 
 
 ## Contact
