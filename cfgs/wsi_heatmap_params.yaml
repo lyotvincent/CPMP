@@ -1,6 +1,6 @@
 exp_arguments:    
   save_exp_code:    HEATMAP_OUTPUT                                                      # name tag for saving generated figures and assets
-  raw_save_dir:     results/TCGABRCA_4Heatmaps_20x_t0f0                                 # where to save raw asset files
+  raw_save_dir:     results/demo_TCGABRCA_4Heatmaps_20x_t0f0                            # where to save raw asset files
   batch_size:       500
 
 
@@ -14,7 +14,7 @@ patching_arguments:                                                             
 data_arguments: 
   preset:                                                                               # preset csv file for segmentation/patching
   process_list:                                                                         # [first priority] csv list containing slide_ids (can additionally have seg/patch paramters, class labels, etc.) 
-  data_dir:         /data/cyyan/Projects/TCGA-BRCA/harmonized/Biospecimen/SVSimage/     # [second priority], where is slide data stored; can be a single str path or a list of subdir
+  data_dir:         demo-data/                                                          # [second priority], where is slide data stored; can be a single str path or a list of subdir
   spec_slide:                                                                           # [third priority], list of slide_ids to process
   slide_ext:        .svs                                                                # file extention for slides
   data_csv_info:                                                                        # the csv file containing the `slide id` and `label` [commonly None.]
