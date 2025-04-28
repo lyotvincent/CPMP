@@ -13,7 +13,7 @@ Recurrence of breast cancer (BC) is a primary cause of mortality and is associat
 We hypothesized that morphological patterns in routine histological slides associated with prognosis can be bridged by the MP molecular biomarker.  
 
 **Key Ideas & Main Findings**
-1. **Data Establishment**. We established a HR+/HER2- BC clinical cohort, TJMUCIH-MP, with 477 female patients from TJMUCIH. The patient cohort was comprised of clinicopathologic characteristics, digital WSIs, and genomic MP diagnostic test results.
+1. **Data Establishment**. We established a HR+/HER2- BC clinical cohort, TJMUCH-MP, with 477 female patients from TJMUCH. The patient cohort was comprised of clinicopathologic characteristics, digital WSIs, and genomic MP diagnostic test results.
 <div align="center">
 	<img src="materials/github_1cohort.png" alt="Editor" width="85%">
 </div>
@@ -51,6 +51,7 @@ CPMP is implemented by Python 3.8 and PyTorch 2.2. The packages required have be
 ✨ To install the Conda environment, you can run the command in the terminal:
 
 ```shell
+sudo apt install openslide-tools python3-openslide libmapnik-dev mapnik-utils python3-mapnik
 conda env create -f environments.yml
 conda activate cpmp
 ```
@@ -293,4 +294,8 @@ If you have any problems, just raise an issue in this repo.
 Our code is developed on the top of [CLAM](https://github.com/mahmoodlab/CLAM), [PhiHER2](https://github.com/gatsby2016/PhiHER2), and [Agent-Attention](https://github.com/LeapLabTHU/Agent-Attention). 
 
 
-If you find our work useful in your research, please consider giving this repo a star. Thank you~
+If you find our work useful in your research, please consider citing our work and giving this repo a star. Thank you~
+
+```
+preprint bibtex, coming soon.
+```
