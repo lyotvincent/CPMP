@@ -1,5 +1,8 @@
 # CPMP: AI-driven computational pathology for recurrence risk assessment in early-stage breast cancer 
 
+**✨NEWS:** Our paper is now avavilable on bioRxiv. [\[preprint link\]](https://www.biorxiv.org/content/10.1101/2025.04.26.648504v1)
+
+
 > We presented an AI-driven computational pathology framework (CPMP) for MP-informed recurrence risk assessment in patients with early-stage BC using histopathological WSIs.   
 
 ## Highlights
@@ -297,5 +300,15 @@ Our code is developed on the top of [CLAM](https://github.com/mahmoodlab/CLAM), 
 If you find our work useful in your research, please consider citing our work and giving this repo a star. Thank you~
 
 ```
-preprint bibtex, coming soon.
+@article {Yan2025.04.26.648504,
+	author = {Yan, Chaoyang and Li, Linwei and Qian, Xiaolong and Ou, Yang and Huang, Zhidong and Ruan, Zhihan and Xiang, Wenting and Liu, Hong and Liu, Jian},
+	title = {AI-driven computational pathology for recurrence risk assessment in early-stage breast cancer},
+	elocation-id = {2025.04.26.648504},
+	year = {2025},
+	doi = {10.1101/2025.04.26.648504},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2025/04/29/2025.04.26.648504},
+	eprint = {https://www.biorxiv.org/content/early/2025/04/29/2025.04.26.648504.full.pdf},
+	journal = {bioRxiv}
+}
 ```
