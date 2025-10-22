@@ -1,6 +1,7 @@
 # CPMP: Predicting MammaPrint Recurrence Risk from Breast Cancer Pathological Images Using a Weakly Supervised Transformer   
 
-**✨NEWS:** Our paper is now avavilable on bioRxiv. [\[preprint link\]](https://www.biorxiv.org/content/10.1101/2025.04.26.648504v1)
+**🚀NEWS:** [2025-10-22]: The cohort has been deposited in the National Genomics Data Center (NGDC) under BioProject accession number [PRJCA035385][https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA035385].       
+**✨NEWS:** Our paper is now avavilable on bioRxiv. [\[preprint link\]](https://www.biorxiv.org/content/10.1101/2025.04.26.648504v1)    
 
 
 > We presented an AI-driven computational pathology framework (CPMP) for MP-informed recurrence risk assessment in patients with early-stage BC using histopathological WSIs.   
@@ -65,7 +66,7 @@ If `ctranspath` feature extractor is further used (which was utilized for ablati
 
 ### 2. Data 
 
-The in-house cohort is accessible upon request. The data can only be used under the condition that the request is for non-profit, purely academic research purposes, and the requesting researchers must provide valid ethics approval from their institution. 
+The clinical cohort has been deposited in the National Genomics Data Center (NGDC) under BioProject accession number [PRJCA035385](https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA035385), which is publicly accessible at: [https://ngdc.cncb.ac.cn/bioproject/](https://ngdc.cncb.ac.cn/bioproject). Researchers can request access to the data for non-profit, purely academic research purposes following the standard approval process.    
 
 The TCGA-BRCA data (slides and clinicopathological information) are available at [portal.gdc.cancer.gov](https://portal.gdc.cancer.gov/). The follow-up data are available at [TCGA Clinical Data Resource](https://doi.org/10.1016/j.cell.2018.02.052). 
 
