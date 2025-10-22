@@ -1,6 +1,6 @@
 # CPMP: Predicting MammaPrint Recurrence Risk from Breast Cancer Pathological Images Using a Weakly Supervised Transformer   
 
-**🚀NEWS:** [2025-10-22]: The cohort has been deposited in the National Genomics Data Center (NGDC) under BioProject accession number [PRJCA035385][https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA035385].       
+**🚀NEWS:** [2025-10-22]: The cohort has been deposited in the NGDC, BioProject accession number [PRJCA035385](https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA035385).       
 **✨NEWS:** Our paper is now avavilable on bioRxiv. [\[preprint link\]](https://www.biorxiv.org/content/10.1101/2025.04.26.648504v1)    
 
 
