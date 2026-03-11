@@ -1,7 +1,9 @@
 # CPMP: Predicting MammaPrint Recurrence Risk from Breast Cancer Pathological Images Using a Weakly Supervised Transformer   
 
+
+**🚀NEWS:** [2025-11-07]: Our work has been published in [Advanced Science](https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202510307)(Top journal, IF=14.1).       
 **🚀NEWS:** [2025-10-22]: The cohort has been deposited in the NGDC, BioProject accession number [PRJCA035385](https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA035385).       
-**✨NEWS:** Our paper is now avavilable on bioRxiv. [\[preprint link\]](https://www.biorxiv.org/content/10.1101/2025.04.26.648504v1)    
+**✨NEWS:** Our paper is now available on bioRxiv. [\[preprint link\]](https://www.biorxiv.org/content/10.1101/2025.04.26.648504v1)    
 
 
 > We presented an AI-driven computational pathology framework (CPMP) for MP-informed recurrence risk assessment in patients with early-stage BC using histopathological WSIs.   
@@ -301,15 +303,17 @@ Our code is developed on the top of [CLAM](https://github.com/mahmoodlab/CLAM), 
 If you find our work useful in your research, please consider citing our work and giving this repo a star. Thank you~
 
 ```
-@article {Yan2025.04.26.648504,
-	author = {Yan, Chaoyang and Li, Linwei and Qian, Xiaolong and Ou, Yang and Huang, Zhidong and Ruan, Zhihan and Xiang, Wenting and Liu, Hong and Liu, Jian},
-	title = {AI-driven computational pathology for recurrence risk assessment in early-stage breast cancer},
-	elocation-id = {2025.04.26.648504},
-	year = {2025},
-	doi = {10.1101/2025.04.26.648504},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2025/04/29/2025.04.26.648504},
-	eprint = {https://www.biorxiv.org/content/early/2025/04/29/2025.04.26.648504.full.pdf},
-	journal = {bioRxiv}
+@article{https://doi.org/10.1002/advs.202510307,
+author = {Yan, Chaoyang and Li, Linwei and Qian, Xiaolong and Ou, Yang and Huang, Zhidong and Ruan, Zhihan and Xiang, Wenting and Liu, Hong and Liu, Jian},
+title = {Predicting MammaPrint Recurrence Risk from Breast Cancer Pathological Images Using a Weakly Supervised Transformer},
+journal = {Advanced Science},
+volume = {13},
+number = {4},
+pages = {e10307},
+keywords = {breast cancer, computational pathology, recurrence risk assessment, tumor spatial morphology, weakly supervised learning},
+doi = {https://doi.org/10.1002/advs.202510307},
+url = {https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/advs.202510307},
+eprint = {https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.202510307},
+year = {2026}
 }
 ```
